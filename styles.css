@@ -1,0 +1,439 @@
+:root {
+    --cor-azul: #004aad;
+    --cor-verde: #2bc866;
+    --cor-escurov: #1a9047;
+    --cor-branco: #fff;
+
+    --fonte-secundaria: Helvetica ;
+}
+
+@font-face {
+    font-family: primaria;
+    src: url(/assets/HelveticaNeue\ Bold.ttf);
+}
+
+/* Aplicando estilos básicos ao corpo da página */
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--cor-branco);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.txlogo {
+    font-size: 40px;
+    color: var(--cor-azul);
+    font-family: primaria;
+}
+
+/* Estilizando a área do logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilizando a imagem do logo */
+.logo img {
+    height: 40px;
+    margin-right: 10px ;
+}
+/* Estilizando o menu de navegação */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: var(--cor-azul);
+    font-size: 25px;
+    font-family: primaria;
+}
+/* Estilizando os itens do menu de navegação */
+nav ul li {
+    margin-left: 20px;
+    color: var(--cor-azul);
+}
+/* Estilizando os links do menu de navegação */
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-azul);
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+/* Estilizando os botões de autenticação */
+.auth-buttons button {
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+.auth-buttons button:hover {
+    background-color: green;
+    color: white;
+}
+
+
+
+section {
+    padding: 60px 0;
+}
+/* Estilizando a seção Home */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 100px;
+}
+
+h1 {
+    color: var(--cor-verde);
+    font-size: 50px;
+    font-family: primaria;
+}
+
+h2{
+    color: var(--cor-verde);
+    font-family: primaria;
+}
+/* Estilizando a ilustração na seção Home */
+
+.illustration{
+    padding: 100px;
+}
+/* Estilizando a barra de busca */
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center ;
+    gap: 8px;
+}
+/* Estilizando o campo de texto da barra de busca */
+.search-bar input {
+    width: 500px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+/* Estilizando o botão da barra de busca */
+.search-bar button {
+    display: flex;
+    align-items: center ;
+    padding: 13px 20px;
+    font-size: 16px;
+    font-family: primaria;
+    border: none;
+    background-color: #717e8a;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.search-bar img {
+    width: 20%;
+}
+
+/* Estilizando a seção Sobre nós */
+.about, .partners {
+    text-align: center;
+}
+/* Estilizando a área de funcionalidades */
+.features {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 1px;
+}
+/* Estilizando cada funcionalidade */
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+/* Estilizando as imagens das funcionalidades */
+.feature img {
+    width: 40%;
+    height: 100%;
+}
+
+.partners-logos img {
+    width: 10%;
+}
+/* Estilizando os textos das funcionalidades */
+.text_cadastro{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.text_cadastro h1 {
+    font-family: var(--fonte-secundaria);
+    font-size: 35px;
+}
+
+.text_cadastro button {
+    width: 300px;
+    padding: 15px;
+    font-family: primaria;
+    border: none;
+    background-color: var(--cor-verde);
+    border: 2px solid var(--cor-verde);
+    border-radius: 5px;
+    color: #fff;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.text_cadastro button:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-verde);
+}
+/* Estilizando a barra de busca */
+.search-bar button:hover {
+    background-color: #49445c;
+    
+}
+/* Estilizando a área de conteúdo da seção Parceiros */
+.hero {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-verde);
+    color: #fff;
+
+   
+}
+
+.hero-content {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    flex-direction: column;
+    justify-content: right;
+    max-width: 50%;
+   padding-left: 200px;
+  
+  font-family: var(--fonte-secundaria);
+}
+
+.hero-content h1 {
+    font-family: primaria;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--cor-branco);
+}
+
+.hero-content p {
+    margin-bottom: 15px;
+}
+
+.partners{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 50px;
+    padding: 10px;
+    padding-left: 100px;
+    background-color: var(--cor-branco);
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    gap: 70px;
+}
+/* Estilizando as logos dos parceiros */
+.partners img {
+    width: 70px;
+    height: 10px;
+    
+    margin: 10px;
+    height: 50px;
+}
+
+.hero-image img {
+    width: 500px;
+    height: 100%;
+    padding-right: 200px;
+}
+
+  
+/* Estilizando a seção Ajuda */
+.help {
+    text-align: center;
+    margin-top: 40px;
+  }
+/* Estilizando a área de topo da seção Ajuda */
+  .help-topo {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-right: 300px;
+    
+    
+  }
+/* Estilizando o texto e img da área de topo da seção Ajuda */
+  .help-topo h1 p {
+    font-family: primaria;
+    display: flex;
+   
+    
+  }
+  
+
+  
+  .help-topo img {
+        width: 30%;
+        padding-left: 400px;
+        
+  }
+
+  
+
+
+
+  
+  
+  .help p {
+    margin-bottom: 30px;
+  }
+  /* Estilizando  os cards da seção Ajuda */
+  .help-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .help-card {
+    background-color: #fff;
+    border: 2px solid var(--cor-verde);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 200px;
+    height: 350px;
+    text-align: left;
+  }
+
+ 
+  
+  .help-card img {
+    width: 16%;
+  }
+
+
+ 
+  .help-card h3 {
+    color: var(--cor-verde);
+    margin-bottom: 10px;
+    font-size: 1.0rem;
+    font-family: primaria;
+
+  }
+  
+  .help-card p, .help-card ul {
+    font-family: var(--fonte-secundaria);
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+ /* Estilizando as setas  da seção Ajuda */
+  .arrow-button-direita {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-branco);
+    border: none;
+    cursor: pointer;
+    position: relative;
+   
+  }
+
+  .arrow-button-direita:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: solid transparent;
+    border-width: 20px 0 20px 24px;
+    border-left-color: var(--cor-verde);
+  }
+
+  .arrow-button-direita:hover {
+    background-color: var(--cor-verde);
+    border-radius: 10px;
+    transition:  0.9s;
+   
+  }
+
+  .arrow-button-direita:hover:before {
+    border-left-color: var(--cor-branco); 
+    transition: border-left-color 0.9s;
+  }
+
+
+  .arrow-button-esquerda{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-branco);
+    border: none;
+    cursor: pointer;
+    position: relative;
+   
+  }
+
+  .arrow-button-esquerda:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+    border: solid transparent;
+    border-width: 20px 24px 20px 0;
+    border-right-color: var(--cor-verde); 
+    
+  }
+
+  .arrow-button-esquerda:hover {
+    background-color: var(--cor-verde);
+    border-radius: 10px;
+    transition:  0.9s;
+   
+  }
+
+  .arrow-button-esquerda:hover:before {
+    border-right-color: var(--cor-branco); 
+    transition: border-right-color 0.9s;
+  }
+

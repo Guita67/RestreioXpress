@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreio Xpress</title>
+     <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="logo">
+             <!-- Logo do Rastreio Xpress -->
+            <img src="/assets/icons8-entrega-48.png" alt="Rastreio Xpress Logo">
+            <span class="txlogo">Rastreio Xpress</span>
+        </div>
+        <!-- Menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#parceiros">Parceiros</a></li>
+                <li><a href="#ajuda">Ajuda</a></li>
+            </ul>
+        </nav>
+        <!-- Botões de autenticação -->
+        <div class="auth-buttons">
+            <button onclick="window.location.href='login.html'">Entrar</button>
+            <button onclick="window.location.href='cadastro.html'">Cadastrar</button>
+        </div>
+    </header>
+    <!-- Conteúdo principal do site -->
+    <main>
+        <!-- Seção Home -->
+        <section id="home" class="home">
+            <h1>Rastreie seu Pedido!</h1>
+             <!-- Barra de busca -->
+            <div class="search-bar">
+            <input type="text" placeholder="Código de rastreamento">
+            <button>
+                <img src="/assets/icons8-gps-50.png"  alr="icon gps">
+                RASTREAR
+            </button>
+             </div>
+             <!-- Ilustração -->
+            <div class="illustration">
+                <img src="./assets/boxes (1).svg" alt="Ilustração">
+            </div>
+        </section>
+ <!-- Seção Sobre nós -->
+        <section id="sobre" class="about">
+            <h1>Veja como o Rastreio Express pode facilitar sua rotina</h1>
+            <h3>As funcionalidades do Rastreio Express foram desenvolvidas para ajudar você a organizar a rotina logística.</h3>
+
+            <!-- Funcionalidades -->
+            <div class="features">
+                <div class="feature">
+                    <img src="/assets/search.svg" alt="Buscar encomenda">
+                    <h2>Busque por uma encomenda</h2>
+                    <p>Use o Rastreio Express para encontrar suas encomendas. Basta colar o código de rastreamento no campo de buscas e aproveitar.</p>
+                </div>
+                <div class="feature">
+                    <img src="/assets/phone_loc.svg" alt="Acompanhar encomenda">
+                    <h2>Acompanhe suas encomendas</h2>
+                    <p>O Rastreio Express foi desenvolvido para facilitar a visualização de suas encomendas. Nada de atualizações misteriosas e difíceis de entender.</p>
+                </div>
+                <div class="feature">
+                    <img src="/assets/notification_bell.svg" alt="Receber notificações">
+                    <h2>Receba notificações</h2>
+                    <p>No Rastreio Express você acompanha tudo o que acontece com a sua encomenda diretamente no seu e-mail.</p>
+                </div>
+                    
+                
+            </div><!-- Texto e botão de cadastro -->
+            <div class="text_cadastro">
+                <h1>O Rastreio Express foi desenvolvido espevialmente para quem deseja usar uma ferramenta simples, objetiva e sem enrolação.</h1>
+                <button  onclick="window.location.href='cadastro.html'">CADASTRE-SE AGORA</button>
+            </div>
+        </section>
+              <!-- Seção Parceiros -->
+
+        <section id="parceiros" class="hero">
+            <div class="hero-content">
+                <h1>A plataforma de rastreamento mais completa do mercado</h1>
+                <p>O Melhor Rastrei controla todos os envios postados na Azul Cargo Express e Correios.</p>
+                <p>Porém, quem faz envios com etiquetas geradas na plataforma do Melhor Envio também consegue rastrear encomendas enviadas pela Jadlog, Buslog, Via Brasil e LATAM Cargo.</p>
+                <div class="partners">
+                    <!-- Logos dos parceiros -->
+                    <img src="/assets/parceiros/jt_express-logo_brandlogos.net_meuq3.png" alt="J&T Express">
+                    <img src="/assets/parceiros/azulcargologo3.png" alt="Azul Cargo Express">
+                    <img src="assets/parceiros/logo-buslog2.jpg" alt="Buslog">
+                    <img src="assets/parceiros/logo-correios-4096.png" alt="Correios">
+                </div>
+            </div>
+            <!-- Imagem ilustrativa -->
+            <div class="hero-image">
+                <img src="assets/image_green_background (2).svg" alt="Hero Image">
+            </div>
+        </section>
+          <!-- Seção Ajuda -->
+        <section id="ajuda" class="help">
+            <div class="help-topo">
+            <img src="assets/need_help.svg" alt="ajuda Imagem">
+            <div class="help-text">
+            <h1>Precisa de ajuda com algum rastreio?</h1>
+            <p>Veja o que fazer em cada um dos casos:</p>
+            </div>  
+            </div>
+                <!-- Cartões de ajuda -->
+            <div class="help-cards">
+                <a href="#" class="arrow-button-esquerda"></a>
+                <div class="help-card">
+                    <img src="assets/icons/icons8-ampulheta-48.png" alt="Hero Image">
+                    <h3>Estou esperando uma encomenda</h3>
+                    <p>O remetente é a única pessoa que pode resolver problemas relacionados ao rastreio. Sugerimos que peça para a pessoa responsável pelo envio entrar em contato com a gente seguindo as instruções para lojistas.</p>
+                </div>
+                
+                <div class="help-card">
+                    <img src="assets/icons/icons8-orthogonal-view-50.png" alt="Hero Image">
+                    <h3>Enviei um pacote com etiqueta do Melhor Envio</h3>
+                    <p>É muito fácil encontrar ajuda. Veja só:</p>
+                    <ul>
+                        <li>Entre na sua conta Melhor Envio</li>
+                        <li>Vá até a opção Ajuda</li>
+                        <li>Escolha o assunto que melhor representa sua dúvida e encontre o suporte que precisa</li>
+                    </ul>
+                </div>
+                <div class="help-card">
+                    <img src="assets/icons/icons8-folha-de-papel-50.png" alt="Hero Image">
+                    <h3>Comprei uma etiqueta diretamente com a transportadora</h3>
+                    <p>Sugerimos que entre em contato com a empresa responsável pelo envio.</p>
+                </div>
+                <div class="help-card">
+                    <img src="assets/icons/icons8-dinheiro-64.png" alt="Hero Image">
+                    <h3>Eu vou pagar alguma taxa de uso ou mensalidade?</h3>
+                    <p>Não! O Melhor Rastrei é totalmente gratuito e não cobra nenhuma mensalidade ou taxa pelos serviços.</p>
+                </div>
+                
+                <a href="#" class="arrow-button-direita"></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
